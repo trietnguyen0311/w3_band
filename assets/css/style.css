@@ -22,10 +22,6 @@ vs
 */
 
 /* Common */
-.clear {
-  clear: both;
-}
-
 .text-white {
   color: #fff !important;
 }
@@ -105,7 +101,6 @@ vs
   right: 0;
   height: 46px;
   z-index: 1; /* chỉnh theo trục Z*/
-  overflow: hidden;
 }
 
 #nav {
@@ -238,8 +233,8 @@ vs
   padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 16px;
-  padding-right: 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #content .section-heading {

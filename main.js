@@ -49,7 +49,14 @@
     for (var i = 0 ; i < menuItems.length; i++) {
         var menuItem = menuItems[i];
         
-        menuItem.onclick = function() {
-            header.style.height = null;
+        menuItem.onclick = function(event) {
+            // Lấy thẻ có thẻ con bên trong và thẻ con có class là subnav
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'); 
+            
+            if (isParentMenu) {
+                event.preventDefault(); //Hủy tác vụ mặc định 
+            } else {
+                header.style.height = null; //xóa css
+            }
         }
     }
